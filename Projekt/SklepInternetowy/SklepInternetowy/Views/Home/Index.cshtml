@@ -1,0 +1,82 @@
+﻿@model ComputerCreateModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong>UWAGA!!!</strong> Z przyczyn technicznych konfigurator nie działa. Za utrudnienia przepraszamy.
+      <img src="~/crying.jpg" alt="...">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="text-center">
+    <h1 class="display-4">Stwórz swój komputer</h1>
+</div>
+
+<div class="row">
+            <div class="col-md-8 offset-2">
+                   <form>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">CPU</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">GPU</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Płyta główna</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">RAM</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">PSU</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Dysk</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                        </div>
+                   </form>
+                   <button type="button" class="btn btn-success">Stwórz</button>
+            </div>
+        </div>

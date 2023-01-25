@@ -1,0 +1,47 @@
+﻿@model IEnumerable<SklepInternetowy.Models.Motherboard>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Płyty główne</h1>
+
+<p>
+    <a asp-action="Add" class="btn btn-success">Create New</a>
+</p>
+<table class="table table-dark">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Firma)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Model)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cena)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Firma)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Model)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cena)
+            </td>
+            <td>
+                
+                <a class="btn btn-outline-info" asp-action="Details" asp-route-id="@item.ID"><i class="bi bi-eye"></i>Details</a> |
+                <a class="btn btn-danger text-white" asp-action="Delete" asp-route-id="@item.ID"><i class="bi bi-trash"></i>Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
